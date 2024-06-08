@@ -1,0 +1,124 @@
+/* Reset CSS */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  color: #eee;
+  background-color: #333;
+}
+
+/* Estilização do header */
+header {
+  background-color: #111;
+  padding: 5px 0; /* Reduzindo o padding */
+  text-align: center;
+}
+
+.logo_caixa {
+  display: flex;
+  
+  justify-content: center;
+}
+
+.logo {
+  width: 10%; /* Reduzindo o tamanho da logo */
+}
+
+/* Estilização do título do site */
+.titulo_site {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilização das áreas do site */
+.area_site {
+  background-color: #222;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+/* Estilização da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Estilização dos botões */
+.adicionar {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.adicionar:hover {
+  background-color: #666;
+}
+
+/* Estilização dos inputs */
+.input-padrao {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Estilização das mensagens de erro */
+.erro {
+  color: #ff7f7f;
+  margin-top: 5px;
+}
+
+.design {
+  display: inline-block; 
+  width: 40%;
+  padding-left: 7%;
+  padding-bottom: 1%;
+}
+
+#filtrar-tabela {
+  width: 19.5%;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.invisivel {
+  display: none;
+}
+
+/* Estilização dos links */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

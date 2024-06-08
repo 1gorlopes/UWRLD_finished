@@ -1,0 +1,39 @@
+{
+    "encomendas": [
+        {
+            "nome": "Bruce",
+            "produto": "Juice's Bag3",
+            "qtde": 3,
+            "unit": 800,
+            "total": 0
+        },
+        {
+            "nome": "Capitão Pátria",
+            "produto": "Camisa 999",
+            "qtde": 2,
+            "unit": 200,
+            "total": 0
+        },
+        {
+            "nome": "Igor",
+            "produto": "Disco - Legends Never Die",
+            "qtde": 1,
+            "unit": 700,
+            "total": 0
+        },
+        {
+            "nome": "Snoop Dogg",
+            "produto": "Jaqueta WRLD",
+            "qtde": 5,
+            "unit": 600,
+            "total": 0
+        },
+        {
+            "nome": "Dr dre",
+            "produto": "Camisa 999",
+            "qtde": 5,
+            "unit": 200,
+            "total": 0
+        }
+    ]
+}

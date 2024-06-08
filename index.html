@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <link href="estilo.css" rel="stylesheet">
+  <title>Urban WRLD</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo_caixa">
+      <img src="assets/Logo_empty.png" class="logo" />
+    </div>
+  </header>
+  <div class="cor_fundo">
+    <!--Sobre a empresa-->
+    <section class="area_site">
+      <h1 class="titulo_site"> Lista de Encomendas</h1>
+      <hr />
+      <label for="filtrarabela">Filtrar</label>
+      <input type="text" id="filtrar-tabela" placeholder="Digite o nome da tabela">
+    </section>
+    <table id="tabela-encomendas">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor Unitario</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="clientes">
+          <td class="nome">Marshall Matters</td>
+          <td>Juice's Bag</td>
+          <td class="qtde">3</td>
+          <td class="unitario">300</td>
+          <td class="total">-</td>
+        </tr>
+        <tr class="clientes">
+          <td class="nome">Igor </td>
+          <td>Disco - Legends Never Die</td>
+          <td class="qtde">2</td>
+          <td class="unitario">200</td>
+          <td class="total">-</td>
+        </tr>
+        <tr class="clientes">
+          <td class="nome">Curtis Jackson</td>
+          <td>Jaqueta WRLD</td>
+          <td class="qtde">3</td>
+          <td class="unitario">400</td>
+          <td class="total">-</td>
+        </tr>
+        <tr class="clientes">
+          <td class="nome">Gabriel</td>
+          <td>Jaqueta WRLD</td>
+          <td class="qtde"> 2</td>
+          <td class="unitario">300</td>
+          <td class="total">-</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="botoes">
+    <button id="buscar-encomendas" class="adicionar"> Buscar Encomendas</button>
+  </div>
+    <!--Área de inserção de formulário-->
+    <section class="area_site">
+      <h1 class="titulo_site"> Adicionar nova encomenda</h1>
+      <hr />
+      <section>
+        <div class="erro" id="erro-nome"></div>
+        <div class="erro" id="erro-qtde"></div>
+        <div class="erro" id="erro-produto"></div>
+        <div class="erro" id="erro-unit"></div>
+        <div class="erro" id="mensagem-erro"></div>
+      </section>
+    </section>
+    <section class="dadosEncomenda">
+      <div class="design">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="" class="input-padrao" required placeholder="Digite o nome do(a) cliente">
+      </div>
+      <div class="design">
+        <label for="qtde">Qtde:</label>
+        <input type="number" id="qtde" name="" class="input-padrao" required placeholder="Digite a quantidade encomendada">
+      </div>
+      <div class="design">
+        <label for="prod">Produto:
+          <select class="input-padrao" id="produto" required>
+            <option>Selecione</option>
+            <option>Juice's Bag</option>
+            <option>Disco - Legends Never Die</option>
+            <option>Camisa 999</option>
+            <option>Jaqueta WRLD</option>
+          </select>
+        </label>
+      </div>
+      <div class="design">
+        <label for="unit">R$ Unitario:</label>
+        <input type="number" id="unit" name="" class="input-padrao" required placeholder="Digite o valor unitario do produto">
+      </div>
+      <div class="botoes">
+      <input type="button" id="adicionar-encomenda" value="Adicionar" class="adicionar" onclick="adicionarEncomenda()">
+    </div>
+    </section>
+    <script src="javascript.js"></script>
+    <script src="buscarencomenda.js"></script>
+  </div>
+</body>
+
+</html>
